@@ -1,0 +1,54 @@
+body, html{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #fddbef, #a46287);
+}
+
+.Eid-container {
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+}
+
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+
+.Eid-container img {
+  width: 100%;
+  max-width: 350px;
+  cursor: pointer;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.16);
+  transition: transform 0.3s ease;
+}
+.Eid-container img:hover {
+  transform: scale(1.05);
+}
+
+
+.message {
+  margin-top: 25px;
+  font-size: 2rem;
+  color: #a0006e;
+  opacity: 0;
+  transform: translateX(20px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  user-select: none;
+}
+
+.message.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
